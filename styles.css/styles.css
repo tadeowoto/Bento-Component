@@ -21,17 +21,126 @@
   }
 
   .bento-container{
-    width: 600px;
-    height: 700px;
-    background-color: aqua;
+    width: 700px;
+    height: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   .cam-stats{
-    background-color: antiquewhite;
+    position: relative;
     grid-column-start: 1;
     grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    overflow: hidden;
+
   }
-  
+  .text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+
+  .megapxl{
+    font-size: 40px;
+    font-family: var(--font-primary);
+    font-weight: bold;
+  }
+
+  .wide-camera{
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    overflow: hidden;
+  }
+
+  .wide-description{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+  }
+  .wide-camera img{
+    transform: translate(-30%, -20%);
+  }
+
+  .wide-description-p{
+    color: white;
+    font-size: small;
+    font-family: var(--font-secondary);
+  }
+
+  .evolution-images{
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bg-text{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+ .evolution-images img{
+  position: absolute;
+  width: 240px;
+  z-index: 2;
+  transform: translate(-0%, 10%);
+ }
+
+ .bg{
+  color: white;
+  font-family: var(--font-tertiary);
+  text-wrap: initial;
+ }
+
+
+  .apple{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 2;
+    background-color: var(--secondary-bg);
+  }
+  .apple img{
+    width: 50px;
+  }
+  .hdr{
+    background-color: yellow;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    overflow: hidden;
+  }
+  .hdr img{
+    transform: translate(-30%, -30%);
+  }
+  .main-image{
+    background-color: aliceblue;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    overflow: hidden;
+  }
+
+  .main-image img{
+    transform: translate(-10%, 0%);
+    width: 600px;
+  }
+

@@ -18,12 +18,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--main-bg);
   }
 
   .bento-container{
     width: 700px;
     height: 600px;
     display: grid;
+    gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
@@ -35,7 +37,9 @@
     grid-row-start: 1;
     grid-row-end: 3;
     overflow: hidden;
-
+    background-color: var(--secondary-bg);
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
   }
   .text-container{
     position: absolute;
@@ -53,10 +57,13 @@
   }
 
   .wide-camera{
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
     position: relative;
     grid-column-start: 1;
     grid-column-end: 3;
     overflow: hidden;
+    background-color: var(--secondary-bg);
   }
 
   .wide-description{
@@ -67,7 +74,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    
   }
   .wide-camera img{
     transform: translate(-30%, -20%);
@@ -80,11 +86,14 @@
   }
 
   .evolution-images{
+    border-radius: 20px;
+    background-color: var(--secondary-bg);
     grid-column-start: 1;
     grid-row-start: 4;
     grid-row-end: 7;
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
   }
 
   .bg-text{
@@ -95,6 +104,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    
   }
 
  .evolution-images img{
@@ -108,10 +118,13 @@
   color: white;
   font-family: var(--font-tertiary);
   text-wrap: initial;
+  
  }
 
 
   .apple{
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,21 +135,24 @@
     width: 50px;
   }
   .hdr{
-    background-color: yellow;
+    border-radius: 20px;
     grid-row-start: 5;
     grid-row-end: 7;
     overflow: hidden;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
   }
   .hdr img{
     transform: translate(-30%, -30%);
   }
   .main-image{
-    background-color: aliceblue;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
     grid-column-start: 3;
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 7;
     overflow: hidden;
+    background-color: var(--secondary-bg);
   }
 
   .main-image img{
